@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ header{
+  background-color: rgb(29, 21, 49);
+  box-shadow:  0 3px 10px rgba(0, 0, 0, 0.747);
+ }
+ .navbar{
+  display: flex;
+  justify-content: space-around;
+  padding: 1.2rem 6rem;
+ }
+ .logo{
+  display: flex;
+  align-items: center;
+  color: #fff;
+ }
+ .nav-list ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+ }
+ .nav-item{
+  margin:  0 15px;
+ }
+ .nav-link{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+ }
+ .nav-link:hover{
+  transition: 300ms ease;
+  border-radius: 3px;
+  border-bottom: 1px solid aqua;
+ }
+
+ .login-Buttom button{
+  border: none;
+  background-color: aqua;
+  padding: 10px 13px;
+  border-radius: 3px;
+  cursor: pointer;
+ }
+ .login-Buttom button:hover{
+  background-color:#fff;
+ }
+ .login-Buttom button a{
+  color: black;
+  text-decoration: none;
+  font-weight: 800;
+ }
+ .mobile-menu-icon{
+  display: none;
+  
+ }
+ .mobile-menu{
+  display: none;
+ }
+ @media screen and (max-width:730px) {
+  .navbar{ padding:  1.0rem 4rem;}
+  .nav-item{display: none;}
+  .login-Buttom {display: none;}
+  .logo {margin-right: 50vh;}
+  .mobile-menu-icon {display: block;}
+  .mobile-menu-icon button{ background-color: transparent;
+  border: none;
+  cursor: pointer;}
+
+  .mobile-menu ul {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1rem;
+
+  }
+   .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+  .mobile-menu .login-Buttom{
+    display: block;
+    padding: 1.2rem 1.2rem;
+  }
+  .mobile-menu .login-Buttom button{
+    width: 100%;
+
+  }
+  .open{
+    display: block;
+  }
+  
+}
+
+ 
